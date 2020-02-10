@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "E2VR",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

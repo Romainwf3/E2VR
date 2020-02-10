@@ -1,0 +1,7 @@
+{
+  "name": "E2VR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
