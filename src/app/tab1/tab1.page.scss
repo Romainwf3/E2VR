@@ -1,9 +1,4 @@
-// 
-#bg1 {
-    background-color: white;
-}
-
-// Carte Utilisateur____________________________________________________________
+// Carte Utilisateur
 ion-card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 20px;
@@ -13,8 +8,14 @@ span {
     font-weight:bold;
 }
 .female {
-    background-color: red;
+    background-image: url(../../assets/img/bg-female.jpg);
+    background-size: cover;
 }
 .male {
-    background-color: blue;
+    background-image: url(../../assets/img/bg-male.jpg);
+    background-size: cover;
+}
+p,
+ion-card-title {
+    color: black;
 }
