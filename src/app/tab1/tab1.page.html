@@ -1,18 +1,19 @@
 <ion-header>
   <ion-toolbar >
-    <ion-title class="ion-text-center">
+    <ion-title class="ion-text-center" color="light">
       List Users
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list inset="true">
+  <ion-list>
     <ion-list-header>
       <ion-col class="ion-text-center">
         <ion-button (click)="getUsersList()" color="secondary">Refresh</ion-button>
       </ion-col>
     </ion-list-header>
+      <!-- Ajout d'une Class qui appliquera le background en fonction du genre -->
       <ion-card *ngFor="let x of usersList;let i=index" class="{{x.gender}}">
         <ion-card-header>
           <ion-row>
@@ -22,15 +23,20 @@
               </ion-avatar>
             </ion-col>
             <ion-col  class="ion-text-center">
-              <ion-card-title>{{x.name.first}} {{x.name.last}}</ion-card-title>
-              <p>{{x.location.country}}</p>
+              <ion-card-title>
+                <div>
+                  <div>{{x.name.first}}</div> 
+                  <div>{{x.name.last}}</div>
+                </div>
+              </ion-card-title>
             </ion-col>
           </ion-row>
         </ion-card-header>
         <ion-card-content>
-          <p><span>Gender:</span> {{x.gender}}</p>
+          <p><span>Gender</span>: {{x.gender}}</p>
           <p><span>Email:</span> {{x.email}}</p>
           <p><span>Phone:</span> {{x.phone}}</p>
+          <p><span>Country:</span> {{x.location.country}}</p>
           <p><span>Address:</span> {{x.location.street.number}} {{x.location.street.name}} {{x.location.city}}</p>
         </ion-card-content>
       </ion-card>

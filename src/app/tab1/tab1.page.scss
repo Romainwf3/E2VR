@@ -1,12 +1,23 @@
-// Carte Utilisateur
+// Header
+
+ion-toolbar {
+    --background: black;
+}
+
+// Card User
+
+ion-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 ion-card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 20px;
 }
-span {
-    text-decoration: underline;
-    font-weight:bold;
-}
+
+// Background gender
 .female {
     background-image: url(../../assets/img/bg-female.jpg);
     background-size: cover;
@@ -14,6 +25,12 @@ span {
 .male {
     background-image: url(../../assets/img/bg-male.jpg);
     background-size: cover;
+}
+//------------------
+
+span {
+    text-decoration: underline;
+    font-weight:bold;
 }
 p,
 ion-card-title {
