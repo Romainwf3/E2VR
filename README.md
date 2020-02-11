@@ -1,5 +1,4 @@
-# E2VR
-Stage
+# E2VR Test stage
 
-### Preview of Browser
+### Preview
 <img src="https://github.com/Romainwf3/E2VR/blob/master/readme.png">
